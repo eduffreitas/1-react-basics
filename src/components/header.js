@@ -9,10 +9,13 @@ class Header extends Component {
         this.state = {
             keywords: ''
         }
+
+        console.log(props);
     }
     
     inputChange(event){
         this.setState({keywords:event.target.value});
+        this.props.newsSearch(this.state.keywords);
     }
 
     render() {
