@@ -21,7 +21,7 @@ class App extends Component {
             return article.title.indexOf(keywords) > -1 || article.feed.indexOf(keywords) > -1
         })
 
-        this.setState({filtered: filtered});
+        this.setState({filtered});
     }
 
     render() {

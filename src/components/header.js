@@ -9,8 +9,6 @@ class Header extends Component {
         this.state = {
             keywords: ''
         }
-
-        console.log(props);
     }
     
     inputChange(event){
